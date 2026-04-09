@@ -1,125 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SyluxV1 - Bedrock Client</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bad Time Simulator</title>
+  <meta name="description" content="Bad Time Simulator is a fast-paced boss fight game where you face Sans. Test your reflexes, dodge relentless attacks, and keep your heart alive." />
+  <meta name="keywords" content="Bad Time Simulator" />
+
+  <link rel="canonical" href="https://badtimesimulator.io/" />
+  <link rel="icon" href="/upload/imgs/options/bad-time-simulator-logo2.jpg" />
+  <link rel="apple-touch-icon" href="/upload/imgs/options/bad-time-simulator-logo2.jpg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bad Time Simulator" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://badtimesimulator.io/" />
+  <meta property="og:image" content="/upload/imgs/options/bad-time-simulator-logo.jpg" />
+  <meta property="og:description" content="Bad Time Simulator is a fast-paced boss fight game where you face Sans. Test your reflexes, dodge relentless attacks, and keep your heart alive." />
+  <meta property="og:site_name" content="Bad Time Simulator" />
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Bad Time Simulator" />
+  <meta name="twitter:url" content="https://badtimesimulator.io/" />
+  <meta name="twitter:image" content="/upload/imgs/options/bad-time-simulator-logo.jpg" />
+  <meta name="twitter:description" content="Bad Time Simulator is a fast-paced boss fight game where you face Sans. Test your reflexes, dodge relentless attacks, and keep your heart alive." />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/themes/badtimesimulator.io/rs/css/reboot.css" />
+  <link rel="stylesheet" href="/themes/badtimesimulator.io/rs/css/body-style.css?v=1" />
+  <link rel="stylesheet" href="/themes/badtimesimulator.io/rs/css/home.css?v=1.11" />
+  <link rel="stylesheet" href="/game.css" />
+
+  <!-- Analytics / Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWYNN9M8YJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-PWYNN9M8YJ');
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5436783100115706" crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-5436783100115706" />
+
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0f0f0f;
-      color: #f1f1f1;
-    }
-
-    header {
-      background: linear-gradient(to right, #202020, #292929);
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 2px solid #444;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      color: #00ffff;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #aaa;
-    }
-
-    nav {
-      background: #1a1a1a;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      border-bottom: 1px solid #333;
-    }
-
-    nav a {
-      color: #00ffff;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    nav a:hover {
-      text-shadow: 0 0 5px #00ffff;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-
-    h2 {
-      color: #00ffff;
-      border-bottom: 2px solid #00ffff;
-      padding-bottom: 10px;
-    }
-
-    ul {
-      list-style: square;
-      padding-left: 20px;
-      line-height: 1.8;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #777;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid #333;
-    }
+    body { overflow: hidden; margin: 0; }
+    img { height: auto; }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>SyluxV1</h1>
-    <p>A powerful Minecraft Bedrock Client with modular hacks and custom features</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="terms.html">Terms of Service</a>
-    <a href="#">Features</a>
-    <a href="CLIENT.exe" download>Download</a>
-  </nav>
+<!-- MAIN PANEL -->
+<div class="main-panel">
+  <button type="button" class="btn btn-default hide-main-panel">
+    <i>>></i>
+  </button>
 
-  <main>
-    <h2>What is SyluxV1?</h2>
-    <p>SyluxV1 is a modular hacked client built for Minecraft Bedrock Edition. It’s designed for power users, testers, and creators who want total control.</p>
+  <div class="main-panel-content">
 
-    <h2>Current Features</h2>
+    <div class="menu-header">
+      <a href="/" class="menu-header-item">
+        <!-- home icon svg unchanged -->
+        <svg width="28" height="28" viewBox="0 0 495.398 495.398" fill="#e91e63">
+          <path d="M487.083 225.514l-75.08-75.08V63.704c0-15.682-12.708-28.391-28.413-28.391-15.669 0-28.377 12.709-28.377 28.391v29.941L299.31 37.74c-27.639-27.624-75.694-27.575-103.27.05L8.312 225.514c-11.082 11.104-11.082 29.071 0 40.158 11.087 11.101 29.089 11.101 40.172 0l187.71-187.729c6.115-6.083 16.893-6.083 22.976-.018l187.742 187.747c5.567 5.551 12.825 8.312 20.081 8.312 7.271 0 14.541-2.764 20.091-8.312 11.087-11.087 11.087-29.054 0-40.159z"/>
+        </svg>
+      </a>
+
+      <a href="/hot-games" class="menu-header-item hot">Hot games</a>
+      <a href="/new-games" class="menu-header-item new">New games</a>
+    </div>
+
+    <!-- SEARCH -->
+    <form method="get" action="/search" id="search">
+      <input type="text" name="keywords" placeholder="Search here..." class="inputsearch" />
+      <button type="submit">🔍</button>
+    </form>
+
+    <!-- AD BLOCK -->
+    <div class="main-panel-ads">
+      <div style="text-transform: uppercase; text-align: center; font-size: 9px;">Advertisement</div>
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:300px;height:250px"
+           data-ad-client="ca-pub-5436783100115706"
+           data-ad-slot="5413655928"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <h1>Bad Time Simulator</h1>
+
+    <!-- GAME INFO -->
+    <p><strong>Bad Time Simulator</strong> is a fast-paced boss fight game where you face Sans...</p>
+
+    <h2>The Sans Character in Undertale</h2>
+    <p>Sans is a skeleton character...</p>
+
+    <h2>Controls</h2>
     <ul>
-      <li>🌓 <strong>Fulbright</strong> – See clearly in caves and at night</li>
-      <li>🧱 <strong>Ore Outline</strong> – Highlights ores through walls</li>
-      <li>🗡️ <strong>Reach</strong> – Hit enemies from farther away</li>
-      <li>⛔ <strong>Disabler</strong> – Bypass server-side anti-cheats</li>
-      <li>💨 <strong>Speed</strong> – Move faster than normal</li>
-      <li>🪂 <strong>No Fall</strong> – Prevents fall damage</li>
-      <li>🔍 <strong>ESP</strong> – See players, mobs, or items through walls</li>
-      <li>📃 <strong>Custom GUI</strong> – Open menu with Right Shift</li>
-      <li>🧩 <strong>Modular System</strong> – Enable/disable features easily</li>
+      <li>Arrow keys: Move</li>
+      <li>Z / Enter: Select</li>
+      <li>X: Back / Attack</li>
     </ul>
 
-    <h2>Coming Soon</h2>
-    <ul>
-      <li>⚡ KillAura</li>
-      <li>🌐 WebSocket Server Bridge (for Eaglercraft, etc.)</li>
-      <li>🎮 Controller support</li>
-      <li>🧠 AI-powered auto clicker</li>
-    </ul>
-  </main>
-
-  <div class="footer">
-    &copy; SyluxV1 Developers. Not affiliated with Mojang or Microsoft.<br/>
-    Built By GorillaGamin Also known as LunarLlama add me on discord @ thelunarllama377
   </div>
+</div>
+
+<!-- GAME CANVAS -->
+<base href="/game/bad-time-simulator/" />
+
+<div id="c2canvasdiv">
+  <canvas id="c2canvas" width="640" height="480"></canvas>
+</div>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="c2runtime.js"></script>
+
+<script>
+  jQuery(document).ready(function () {
+    cr_createRuntime('c2canvas');
+  });
+
+  function onVisibilityChanged() {
+    cr_setSuspended(document.hidden);
+  }
+
+  document.addEventListener('visibilitychange', onVisibilityChanged);
+
+  window.C2_RegisterSW = function () {
+    if (!navigator.serviceWorker) return;
+    navigator.serviceWorker.register('sw.js', { scope: './' });
+  };
+</script>
+
+<!-- UI TOGGLE -->
+<script>
+  function ToggleInfo() {
+    $("div.main-panel").toggle();
+  }
+
+  $('button.hide-main-panel').click(ToggleInfo);
+</script>
+
 </body>
 </html>
